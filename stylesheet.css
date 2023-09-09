@@ -1,0 +1,499 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+    margin: 0px !important;
+    padding: 0px;
+}
+html, body {
+  width: auto!important; overflow-x: hidden!important
+} 
+nav ul{
+  margin-left: 17rem !important;
+  color: white !important;
+}
+.nav-link{
+    font-size: 20px !important;
+    color: white !important;
+} 
+.navbar-brand{
+  margin-left:7vw;
+}
+
+.nav-item:hover{
+  text-decoration: underline !important;
+  font-weight: 450;
+  color:  rgb(255, 255, 255) !important;
+  /* background-color: rgb(255, 20, 0) ; */
+  border-radius: 50px;
+  transform: scale(1.1);
+}
+
+#text-color{
+  color: rgb(2, 2, 90);
+  font-weight: 500;
+
+}
+#top-btn{
+  
+  background-color: rgb(255, 20, 0);
+  color: white;
+  font-weight: 650;
+  border-radius: 50px;
+  transition: all ease-in-out;
+}
+#top-btn:hover{
+  transform: scale(1.1);
+  background-color: white;
+  color: rgb(255,20,0);
+  border: 1px solid rgb(255,20,0);
+}
+.collapse{
+  float: right !important;
+  right: 0% !important;
+}
+section h1{
+  text-underline-offset: 1rem !important;  
+ }
+.card{
+border-style: none !important;
+}
+#text1-color{
+  color:rgb(255,20,0) ;
+  line-height: 0.5cm;
+  text-align: left;
+}
+h1{
+  font-weight: 650 !important;
+}
+.section1 .container p{
+  text-align: justify;
+}
+.section1 .card{
+  width: 50% !important;
+}
+.section1  .row .card img{
+  margin-left: -9vw !important;
+}
+.section1 h1{
+  margin: 6vh 1vw;
+  margin-left: 8vw;
+}
+ .section1 p{
+  margin: -4vh 8vw;
+ }
+.section1  .card img{
+margin-left: 2vw;
+}
+.background{
+  float: right !important;
+  top: 0 !important;
+  z-index: -1 !important;
+margin-top: -14vh  !important;
+}
+.section2 .container p{
+  text-align:justify;
+}
+.section3 .container p{
+  text-align: justify;
+}
+.section3 img{
+  margin-left: auto;
+  margin: auto;
+}
+ .section4 img:hover{
+ border: 3px dashed rgb(255, 20, 0);  
+border-radius: 50px;
+animation: borderGrow 2s;
+-webkit-animation: borderGrow 2s;
+}
+.section4 .container{
+  display: flex;
+  justify-content:space-evenly;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.section4 .container img{
+  margin-left:auto;
+  margin-right: auto;
+}
+@keyframes borderGrow {
+  from { border-left: 4px solid rgb(255, 20, 0); }
+   from{ border-right:4px solid rgb(255, 20, 0); }
+}
+.img2{
+  display: none;
+  margin-top:2vh; 
+  margin-bottom: 10px;
+}
+.img3{
+  display: none;
+  margin-top:auto; 
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section5 .container{
+  display: flex;
+  justify-content: space-evenly;
+  /* margin-top: -25px !important; */
+  /* border: 2px solid rgb(250,20,0); */
+}
+.section5  .container .card{
+  border: 2px solid rgb(255, 20, 0) !important;
+  width: 100%;
+  height:25vh;
+  margin: 2vh 2vw;
+  border-radius: 15px;
+  padding: 1vh;
+
+}
+.section5 .container .card:hover{
+background-image: linear-gradient(rgb(175, 0, 0),rgb(62, 1, 122));
+color: white;
+}
+.section5 .container .card:hover p{
+  color: white !important;
+}
+.section5 .container .card:hover h4{
+color: white !important;
+}
+.section5 .container .card:hover .img1{
+  display: none;
+  }
+  .section5 .container .card:hover .img3{
+    display: inline-block;
+    position:relative;
+  }
+  .section6 .row{
+    margin-top:auto ;
+  }
+  .section6 .card{
+    width: 50% !important;
+    height: 50% !important;
+  }
+  .sp1 h2, .sp1 p,.sp2 h2, .sp2 p,.sp3 h2, .sp3 p{
+    padding: 0vh 4vw;
+  
+  }
+  .sp1-text{
+justify-content: center;
+margin-top: auto !important;
+margin-bottom:auto !important;
+  }
+  .section6 .box{
+    /* margin: auto; */
+   height:50% !important;
+   width: 100%;
+    /* background-color: rgb(255, 235, 235); */
+    border-radius:50%;
+  }
+  .section6 .box img{
+    height: 85vh;
+    /* position:absolute; */
+    /* right: -50vw !important; */
+    float: right;
+    top: 50%;
+    margin-top:vh;
+
+  }
+  .section7 .container{
+    display: flex !important;
+  }
+  .section7 .container .card{
+    height: 33vh ;
+    width: 20vw;
+    background-color: rgb(227, 255, 245);
+    border-radius: 10px;
+    margin: 1vh 1vw;
+    padding:2vh 2em !important;
+  }
+.section7 button{
+  background-color:rgb(237, 15, 222);
+  color: white;
+  border-radius: 50px;
+  margin-top: 10vh;
+  font-weight: 600;
+}
+footer{
+    background-image: linear-gradient( to right,rgb(255, 5, 5),rgb(70, 4, 193));
+    color: white;
+    padding: 4vw;
+    margin-top: 8vh;
+}
+footer ul li{
+  margin-left:-2vw ;
+}
+footer box-icon{
+  margin-right: 1vw;
+  /* padding: 0vh  !important; */
+}
+@media (max-width:1400px){
+  nav ul{
+    margin-left:26rem !important;
+    color: white !important;
+    margin-top: 10px !important;
+  }
+  .nav-link{
+    font-size: 15px !important;
+    padding-top: 10px !important;
+  }
+  header .btn{
+    font-size: 17px !important;
+    padding: 2px 10px !important;
+  }
+}
+@media (max-width:1350px){
+  nav ul{
+    margin-left:17rem !important;
+    color: white !important;
+    /* margin-top: 10px !important; */
+  }
+  .nav-link{
+    font-size: 17px !important;
+  }
+  header .btn{
+    font-size: 15px !important;
+    padding: 5px 9px !important;
+  }
+
+}
+@media(max-width:1150px){
+  nav ul{
+    margin-left: 10rem !important;
+    color: white !important;
+  }
+header .btn{
+  font-size: 10px !important;
+  padding: 2px 5px !important;
+}
+.section1  .card img{
+  margin-left: -2vw;
+  }
+  .section6 .box img{
+    height: 70vh;
+  }
+}
+@media (max-width:990px){
+  .section1 .card{
+    width: 100% !important;  
+  }
+  .section1 .card h1 , .section1 .card p{
+    margin-top: 1vh ;
+    margin-bottom: 1vh;
+  }
+  .section1 img{
+    display: none;
+  }
+  nav ul{
+    margin-left:2% !important;
+    color: rgb(0, 0, 0) !important;
+  }
+  nav ul .nav-item:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(255,20,0) !important;
+  }
+  .nav-link{
+    color: black !important;
+  }
+  .nav-item:hover{
+    transition: none !important;
+    transform: none !important;
+  }
+  .img3{
+    margin-left: 35%;
+  }
+  .section6 .box img{
+    height: 50vh;
+  }
+  .section7 .container .card{
+    height: 20vh ;
+    width: 25vw;
+    background-color: rgb(227, 255, 245);
+    border-radius: 10px;
+    margin: 1vh 2vw;
+    padding: 2vh 2vw;
+  }
+}
+@media (max-width:765px){
+  .navbar-brand img{
+    text-align: center !important;
+    /* justify-content: center !important; */
+    height: 10vh;
+    width:60vw;
+    margin-left: 1vw !important;
+    /* float: left; */
+  }
+.navbar-brand{
+  margin-right: -5vw !important;
+}
+  .navbar-toggler-icon{
+    height: 4vh !important;
+    width:4vw !important;
+    /* position: fixed; */
+  }
+  section h1{
+    font-size: 22px;
+  }
+  section h1{
+    text-underline-offset: 0.6rem !important;  
+   }
+  #top-btn{
+    padding: 2px 10px !important;
+  font-size: 10px;
+  font-weight: 600;
+  }
+  .section2 .container{
+    margin-top: 2px !important;
+    padding-top: 2px !important;
+    text-align: justify;
+  }
+  .section2 .card{
+    margin: 0px 15px !important;
+    height: 60vh;
+  }
+  .section3 .container{
+    margin-top: -10px !important;
+    padding-top:2px !important;
+  }
+  .img3{
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .section7 .container{
+    flex-wrap: wrap !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    justify-content: center !important;
+  }
+  .section6 .box img{
+    height: 50vh;
+  }
+  footer h5 , footer box-icon{
+    text-align: center !important;
+    margin: 2vh 3vw !important;
+  }
+
+  footer ul {
+    text-align:left !important;
+    border-bottom: 1px dotted white;
+    padding-left: 0px !important;
+  }
+  footer .social{
+    text-align: center;
+  }
+
+}
+@media (max-width:650px){
+.navbar-brand{
+  margin: auto !important;
+}
+  .section3 img{
+    height: 15vh !important;
+    width: 35vw !important;
+  }
+  .section4 .container{
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+  .section5 .container .card, .section5 .row{
+    margin: 1vw 1vw !important;
+  }
+  .section5 .container .card{
+    height: auto;
+    margin:2px auto;
+    /* width: auto; */
+  }
+  .section5 .container .card .img1 , .section5 .container .card .img3{
+    height: 4vh !important;
+    width: 6vw !important;
+    /* margin-bottom: 1vh !important;*/
+  }
+  .section5 .container .card h4{
+    font-size: 10px;
+    /* margin-bottom: -7vh !important; */
+    font-weight: 650;
+    /* margin-bottom: px !important; */
+    margin-top: 1vh !important;
+    line-height: 0.2cm;
+  }
+  .section5 .container .card p{
+    font-size: 8px !important;
+    margin-bottom: auto;
+  }
+  .section6 .card{
+    width: 50% !important;
+    font-size: 12px !important;
+    text-align: justify;
+    overflow:scroll;
+  }
+  .section6 .box img{
+    height: 25vh;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+    z-index:100 !important;
+  }
+  .section7 .container{
+    flex-wrap: wrap !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    justify-content: center !important;
+  }
+  .section7 .container .card{
+    height: 18vh ;
+    width: 30vw;
+    background-color: rgb(227, 255, 245);
+    border-radius: 10px;
+    margin: 1vh 3vw;
+    padding: 2vh 2vw !important;
+  }
+  .section7 button{
+    margin: 5px auto !important;
+  }
+
+}
+@media (max-width:450px){
+    section h1{
+    text-underline-offset: 0.5rem !important;  
+   }
+   .section1 p, .section1 h1{
+    margin: 2vh 2vw  !important;
+  }
+   .section5 h4{
+    line-height: 0.25cm !important;
+  }
+  
+  .section6 .box img{
+    height: 25vh;
+    margin-top:4vh !important;
+    margin-bottom: auto !important;
+    z-index:100 !important;
+  }
+  .section6 .box{
+    z-index: 100 !important;
+  }
+  .section6 .sp1-text img{
+    height:2vh;
+  }
+  .sp1-text h2{
+    font-size: 30px !important;
+  }
+  .section6 h2{
+    font-size:20px !important;
+  }
+  .section7 .container .card{
+    height: 14vh ;
+    width: 30vw;
+    background-color: rgb(227, 255, 245);
+    border-radius: 10px;
+    margin: 1vh 3vw;
+    padding: 2vh 2vw !important;
+  }
+
+  footer ul li{
+    text-align: left;
+    border-bottom: 1px dotted white;
+    margin-left: auto !important;
+  }
+}

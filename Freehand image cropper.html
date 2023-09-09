@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://half-6.github.io/lf-freehand-cropper/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Freehand image cropper</title>
+    <link href="./Freehand image cropper_files/css" rel="stylesheet">
+    <link href="./Freehand image cropper_files/css(1)" rel="stylesheet">
+    <script src="./Freehand image cropper_files/jquery-3.4.1.min.js.download"></script>
+    <script src="./Freehand image cropper_files/popper.min.js.download"></script>
+    <script src="./Freehand image cropper_files/bootstrap.min.js.download"></script>
+    <script type="text/javascript" src="./Freehand image cropper_files/lf-cropper.min.js.download"></script>
+    <link rel="stylesheet" href="./Freehand image cropper_files/bootstrap.min.css">
+  <style type="text/css">h1 {
+  background-color: #323841;
+  color: #D259B1;
+  font-family: 'Oswald';
+  font-size: 1.45rem;
+  height: 50px;
+  line-height: 50px;
+  text-align: left;
+  display: flex;
+  margin: 0; }
+  h1 img {
+    height: 30px;
+    margin: 10px; }
+
+#btnRectangle {
+  width: 30px;
+  height: 25px; }
+
+.container-sidebar {
+  width: 50px;
+  background-color: #222830;
+  height: calc(100vh - 50px);
+  border-right: 1px solid #323841; }
+  .container-sidebar .icon {
+    display: block;
+    margin: 20px 10px;
+    position: relative;
+    border-radius: 10px; }
+    .container-sidebar .icon:hover {
+      background-color: #323841; }
+    .container-sidebar .icon img {
+      height: 30px;
+      padding: 5px; }
+    .container-sidebar .icon .upload {
+      font-size: 40px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      opacity: 0;
+      cursor: pointer; }
+
+.container-body {
+  height: calc(100vh - 50px);
+  background-color: #222830; }
+  .container-body canvas {
+    width: 100%;
+    height: calc(100vh - 60px); }
+
+.container-pos {
+  top: 50px;
+  right: 0;
+  width: 300px;
+  color: #E2E8E8;
+  padding: 8px;
+  position: absolute; }
+  .container-pos .item {
+    background-color: #323841;
+    margin-bottom: 10px; }
+    .container-pos .item img {
+      height: 80px;
+      width: 80px;
+      margin: 10px;
+      object-fit: scale-down; }
+    .container-pos .item .image-desc {
+      padding: 10px 0;
+      font-size: 12px;
+      font-family: 'Cardo';
+      word-break: break-all; }
+
+.toast {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  background-color: #323841;
+  color: #E2E8E8; }
+  .toast .toast-header {
+    background-color: #323841;
+    color: #E2E8E8;
+    border-bottom: 1px solid #E2E8E8; }
+    .toast .toast-header img {
+      height: 25px; }
+  .toast .close {
+    color: #E2E8E8; }
+  .toast .toast-body {
+    background-color: #323841;
+    padding-left: 30px; }
+    .toast .toast-body ul {
+      margin: 0;
+      padding: 0; }
+      .toast .toast-body ul img {
+        height: 20px;
+        margin: 0 5px; }
+</style></head>
+  <body style="cursor: default;">
+    <h1>
+      <img src="./Freehand image cropper_files/logo.png" class="d-inline-block align-center" alt="">
+      Freehand image cropper 0.0.13
+    </h1>
+    <div class="d-flex">
+      <div class="container-sidebar">
+        <a class="icon" data-toggle="tooltip" data-placement="right" title="" data-original-title="Pen - draw and crop">
+          <img src="./Freehand image cropper_files/cut.png" id="btnPen">
+        </a>
+        <a class="icon" data-toggle="tooltip" data-placement="right" title="" data-original-title="Rectangle - draw and crop">
+          <img src="./Freehand image cropper_files/rectangle.png" id="btnRectangle">
+        </a>
+        <a class="icon" data-toggle="tooltip" data-placement="right" title="" data-original-title="File - upload a picture">
+          <img src="./Freehand image cropper_files/image.png">
+          <input class="upload" type="file" id="btnUpload">
+        </a>
+        <a class="icon" data-toggle="tooltip" data-placement="right" title="" data-original-title="Clear - reset drawing">
+          <img src="./Freehand image cropper_files/reset.png" id="btnReset">
+        </a>
+        <a class="icon" data-toggle="tooltip" data-placement="right" title="" data-original-title="Cropper - crop image and get position ">
+          <img src="./Freehand image cropper_files/edit.png" id="btnPos">
+        </a>
+      </div>
+      <div class="container-body flex-fill">
+        <canvas id="canvas" resize="" width="1857" height="859" style="-webkit-user-drag: none; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></canvas>
+      </div>
+      <div class="container-pos overflow">
+
+      </div>
+    </div>
+    <div class="toast fade hide" data-delay="20000">
+      <div class="toast-header">
+        <img src="./Freehand image cropper_files/logo.png" class="rounded mr-2">
+        <strong class="mr-auto">Help</strong>
+        <!--<small>11 mins ago</small>-->
+        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="toast-body">
+        <ul>
+          <li>Click <img src="./Freehand image cropper_files/image.png"> to upload image</li>
+          <li>Click <img src="./Freehand image cropper_files/cut.png"> to draw and crop</li>
+          <li>Ctrl + click on stroke to add a point</li>
+          <li>Shift + click on point to remove it</li>
+          <li>Ctrl + Shift + click on the drawing object to remove it</li>
+          <li>Drag to move selected object (background,sharp and points) </li>
+          <li>Mouse wheel to zoom in/out selected object </li>
+          <li>Click <img src="./Freehand image cropper_files/edit.png"> to get all positions and cropped images</li>
+          <li>Click <img src="./Freehand image cropper_files/reset.png"> to get clear all drawing</li>
+        </ul>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./Freehand image cropper_files/demo.min.js.download"></script>
+  
+
+</body></html>
